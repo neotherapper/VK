@@ -1,9 +1,8 @@
 module.exports = {
   name: "Vivi Kostopoulou",
   shortName: "Vivi",
-  description:
-    "Vivi Portfolio, focused on clean typography & beautiful imagery",
-  url: 'https://github.com/neotherapper"', // Domain of your site without prefix!
+  description: "Αρχιτεκτονική. Ανακαίνιση. Διακόσμηση",
+  url: "https://gatsby-london.netlify.com", // Domain of your site without prefix!
   prefix: "/",
   author: "George Pilitsoglou",
   twitter: "neotherapper",
