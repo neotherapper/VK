@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/02eb113a-c925-486a-94bd-cd964ec03593/deploy-status)](https://app.netlify.com/sites/relaxed-heisenberg-ce8905/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://gatsby-london.netlify.com">
@@ -21,6 +23,7 @@ A custom, image-centric theme for Gatsby. Made for publishers and portfolios wit
 **Demo: https://gatsby-london.netlify.com**
 
 ---
+
 <p align="center">
   <a href="https://jamstack.studio">
     <img alt="Jamstack Studio" src="https://raw.githubusercontent.com/ImedAdel/media/master/jamstack.studio_(Laptop%20with%20HiDPI%20screen).png" />
