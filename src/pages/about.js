@@ -13,41 +13,57 @@ const AboutPage = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="ABout" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+      <SEO
+        title="ABout"
+        keywords={[
+          `Βούλα`,
+          `Βουλιαγμένη`,
+          `ανακαινίσεις`,
+          `ανακαινίσεις κτιρίων`,
+          `ανακαινίσεις σπιτιών`,
+          `κατασκευές κτιρίων`,
+          `κατασκευές σπιτιών`,
+          `architect`,
+          `vouliagmeni`,
+          `construction`,
+          `architect`,
+        ]}
+      />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-            Clean, minimal, and deeply customisable. London is a theme made for
-            people who appreciate simple lines.
+            Γνωρίστε την VK architecture & construction
           </h2>
-          <figure className="kg-card kg-image-card kg-width-full">
+          <figure className="kg-card kg-image-card">
             <Img
-              fluid={data.benchAccounting.childImageSharp.fluid}
+              fluid={data.profilePic.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Large imagery is at the heart of this theme</figcaption>
+            <figcaption>Vivi Kostopoulou</figcaption>
           </figure>
-          <h3 id="dynamic-styles">Dynamic styles</h3>
+          {/* <figure className="kg-card kg-image-card">
+            <Img
+              fluid={data.profileAlPic.childImageSharp.fluid}
+              className="kg-image"
+            />
+            <figcaption>Alexnadros Parthenis</figcaption>
+          </figure> */}
+          <h3 id="dynamic-styles">Δραστηριότητες</h3>
           <p>
-            London comes with photo-centric main layout best suited to
-            photography, graphics portfolios and other image-heavy uses.
+            Το γραφείο VK architecture & construction ιδρύθηκε το 2011 από την
+            Παρασκευή Κωστοπούλου, Αρχιτέκτων Oxford Brookes University. Το
+            portfolio μας περιλαμβάνει έργα στον τομέα των ξενοδοχείων, καθώς
+            και πλήθος σύγχρονων ιδιωτικών κατοικιών, διαμερισμάτων και
+            επαγγελματικών χώρων.
           </p>
+          <h3 id="dynamic-styles">Η φιλοσοφία</h3>
           <p>
-            Both post and page templates are light and minimal, with all the
-            focus on the content while the design of the theme gets out of the
-            way. Beneath the hood, London enjoys the full power of the{" "}
-            <a href="https://docs.ghost.org/api/handlebars-themes/">
-              Ghost Handlebars Theme API
-            </a>{" "}
-            to provide limitless customisation options and dynamic styles.
-          </p>
-          <p>
-            Don't forget to check out the{" "}
-            <a href="https://docs.ghost.org/integrations/">
-              Ghost Integrations Directory
-            </a>{" "}
-            for more ways to integrate Ghost with your favourite services.
+            Κεντρική φιλοσοφία της ομάδας είναι η δημιουργία ενός νέου τρόπου
+            συμπεριφοράς μέσα στον χώρο, με αποτέλεσμα την καλλιέργεια μιας νέας
+            εμπειρίας. Η αρχιτεκτονική συνδυάζεται με την τέχνη και τη
+            γραφιστική, για να δώσει σχήμα και μορφή σε ένα νέο concept ανάλογα
+            με τις επιθυμίες και τις ανάγκες του κάθε πελάτη.
           </p>
         </div>
       </article>
@@ -62,9 +78,14 @@ const indexQuery = graphql`
         title
       }
     }
-    benchAccounting: file(
-      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
-    ) {
+    profilePic: file(relativePath: { eq: "profile-pic.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    profileAlPic: file(relativePath: { eq: "alexandros.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
