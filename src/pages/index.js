@@ -18,7 +18,19 @@ const BlogIndex = ({ data }, location) => {
     <Layout title={siteTitle}>
       <SEO
         title="All posts"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        keywords={[
+          `Βούλα`,
+          `Βουλιαγμένη`,
+          `ανακαινίσεις`,
+          `ανακαινίσεις κτιρίων`,
+          `ανακαινίσεις σπιτιών`,
+          `κατασκευές κτιρίων`,
+          `κατασκευές σπιτιών`,
+          `architect`,
+          `vouliagmeni`,
+          `construction`,
+          `architect`,
+        ]}
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
